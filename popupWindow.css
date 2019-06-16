@@ -1,0 +1,132 @@
+.popMask {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.popBox {
+	height: 150px;
+	background: rgb(255, 255, 255);
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px;
+	padding: 20px;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+}
+
+.popConfirm {
+	float: right;
+	margin-left: 20px;
+	outline: none;
+	border: none;
+	padding: 8px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	background: rgb(45, 140, 240);
+	color: rgb(255, 255, 255);
+	opacity: 1;
+}
+
+.popCancel{
+	float: right;
+	margin-left: 20px;
+	outline: none;
+	padding: 8px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
+	border: 1px solid rgb(238, 238, 238);
+	opacity: 1;
+}
+
+.popButton:hover{
+	opacity: 0.8;
+}
+
+
+.popBoxContent {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.popConTop {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+}
+
+.popConMid {
+	width: 100%;
+	height: 55%;
+	display: flex;
+    align-items: center;
+}
+
+.popTopIcon {
+	width: 20px;
+	height: 20px;
+}
+
+.popTopClose {
+	width: 20px;
+	height: 20px;
+	background: url(pic/close.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.popTopTitle {
+	margin-left: 10px;
+	font-size: 16px;
+	color: rgb(51, 51, 51);
+	width: calc(100% - 40px);
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.popMidTxt {
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+	text-indent: 30px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.popConBot {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 100%;
+	height: 25%;
+}
+
+.popInput{
+	color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+	border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.popInput:focus{
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+	border-color: #66afe9;
+    outline: 0;
+}

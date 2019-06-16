@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="popupWindow.css" />
+	<script src="jquery-3.0.0.js"></script>
+	<script src="popupWindow.js"></script>
+
+	<body>
+		<button id="alertClick">alert</button>
+		<button id="promptClick">prompt</button>
+		<button id="confirmClick">confirm</button>
+		<script>
+			$("#alertClick").click(function() {
+				var popWin1 = $.popupWindow({
+					type: 'alert',
+					width: '300',
+					title: 'alert框',
+					content: 'I am alert box',
+					icon: 'error',
+					onClosed: function(arg){
+						console.log(arg)
+					}
+				});
+				
+			});
+			$("#promptClick").click(function() {
+				var popWin2 = $.popupWindow({
+					type: 'prompt',
+					width:'400',
+					title: 'poi?',
+					content: 'I am prompt box',
+					icon: 'correct',
+					onClosed: function(arg1,arg2){
+						console.log(arg1);
+						console.log(arg2)
+					}
+				});
+			});
+			$("#confirmClick").click(function() {
+				var popWin3 = $.popupWindow({
+					type: 'confirm',
+					width:'500',
+					title: 'confirm框',
+					content: 'I am confirm box',
+					icon: 'hint',
+					onClosed: function(arg){
+						console.log(arg)
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
